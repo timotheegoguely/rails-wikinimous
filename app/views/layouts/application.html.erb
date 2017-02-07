@@ -10,6 +10,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
   </head>
 
   <body>
@@ -18,7 +19,7 @@
         <h1 class="end"><%= link_to 'Wikinimous', '/articles/' %></h1>
       </div>
       <div class="col pull-right">
-        <%= link_to 'New article', new_article_path, :class => 'button small inverted outline' %>
+        <%= link_to 'New article', new_article_path, :class => 'button small secondary outline' %>
       </div>
     </header>
 

@@ -7,10 +7,17 @@
         <%= f.text_field :title, :class => "big" %>
       </div>
       <div class="form-item">
-        <%= f.label :content %>
-        <%= f.text_area :content, :rows => 10 %>
+      <%= f.label :content, "Content <span class='desc'>#Feel _free_ **to** `use` [Markdown](https://daringfireball.net/projects/markdown/syntax)</span>".html_safe %>
+        <%= f.text_area :content, :rows => 16 %>
       </div>
-      <%= f.submit "Validate", :class => "button small", :role => "button" %>
+      <div class="row between">
+        <div class="col">
+          <%= link_to "<i class='material-icons md-18'>arrow_back</i>".html_safe, articles_path, :class => "button secondary outline", :role => "button", :style => "padding: 6.5px 8px" %>
+        </div>
+        <div class="col push-right">
+          <%= f.submit "Validate", :class => "button secondary push-right", :role => "button" %>
+        </div>
+      </div>
     <% end %>
 
   </div>
