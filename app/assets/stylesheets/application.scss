@@ -19,13 +19,24 @@ a {
 }
 
 .header {
-  background-color: #F5F5F5;
+  background-color: #1c86f2;
+  color: #fff;
   max-height: 64px;
   padding: 8px 16px;
   margin-bottom: 32px;
   h1 {
+    color: rgba(255,255,255,1);
     font-size: 20px;
     font-weight: 200;
+    a:hover {
+      color: rgba(255,255,255,.6);
+    }
+  }
+}
+
+.heading {
+  & a:hover {
+    color: #4ca0f5;
   }
 }
 
