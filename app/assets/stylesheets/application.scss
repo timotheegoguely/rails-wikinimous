@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #F5F5F5;
+  max-height: 64px;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  h1 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: inherit;
+    flex-wrap: inherit;
+    .col {
+      width: inherit;
+    }
+  }
+}
+
+.article {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #F5F5F5;
+}

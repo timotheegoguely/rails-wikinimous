@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-11 push-center">
+
+    <%= form_for @article, :html => {:class => 'form'} do |f| %>
+      <div class="form-item">
+        <%= f.label :title %>
+        <%= f.text_field :title, :class => "big" %>
+      </div>
+      <div class="form-item">
+        <%= f.label :content %>
+        <%= f.text_area :content, :rows => 10 %>
+      </div>
+      <%= f.submit "Validate", :class => "button small", :role => "button" %>
+    <% end %>
+
+  </div>
+</div>
+
